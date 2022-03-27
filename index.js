@@ -44,7 +44,7 @@ app.post("/wait", (req, resp) => {
       });
     }
     var fucku = async () => {
-      await sleep(15000);
+      await sleep(7000);
       resp.redirect("/download");
     };
     fucku();
