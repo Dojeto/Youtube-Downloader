@@ -16,7 +16,11 @@ app.get("/", (req, resp) => {
   resp.sendFile(path.join(public, "home.html"));
 });
 
-app.post("/download", (req, resp) => {
+app.get("/download", (req, resp) => {
+  resp.sendFile(path.join(public, "download.html"));
+});
+
+app.post("/wait", (req, resp) => {
   const ytUrl = req.body.url;
   const ytSearch = req.body.search;
   var opts = {
@@ -34,12 +38,18 @@ app.post("/download", (req, resp) => {
       }
       ytdl(link).pipe(fs.createWriteStream(`public/video.mp4`));
     });
-    const lamo = () => {
-      resp.sendFile(path.join(public, "download.html"));
+    function sleep(ms) {
+      return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+      });
+    }
+    var fucku = async () => {
+      await sleep(10000);
+      resp.redirect("/download");
     };
-    setInterval(lamo, 10000);
+    fucku();
   } else {
-    resp.send("Bkl Kuch tho dal");
+    resp.send("bkl kuch to dal");
   }
 });
 
