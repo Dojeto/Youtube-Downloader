@@ -3,13 +3,16 @@ const app = express();
 const search = require("youtube-search");
 const fs = require("fs");
 const ytdl = require("ytdl-core");
+var path = require("path");
+
+var public = path.join(__dirname, "public");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 app.get("/", (req, resp) => {
-  resp.render("home");
+  resp.sendFile(path.join(public, "home.html"));
 });
 
 app.post("/download", (req, resp) => {
@@ -22,17 +25,19 @@ app.post("/download", (req, resp) => {
   if (ytSearch != "" || ytUrl != "") {
     search(ytSearch, opts, (err, results) => {
       if (err) return console.log(err);
-      if ((ytSearch != "")) {
+      if (ytSearch != "") {
         var link = results[0]["link"];
         var title = results[0]["title"];
       } else {
         var link = ytUrl;
       }
-      ytdl(link).pipe(fs.createWriteStream(`video.mp4`));
+      ytdl(link).pipe(fs.createWriteStream(`public/video.mp4`));
     });
-    resp.render("download");
-  } 
-  else {
+    const lamo = () => {
+      resp.sendFile(path.join(public, "download.html"));
+    };
+    setInterval(lamo, 10000);
+  } else {
     resp.send("Bkl Kuch tho dal");
   }
 });
