@@ -4,6 +4,7 @@ const search = require("youtube-search");
 const fs = require("fs");
 const ytdl = require("ytdl-core");
 var path = require("path");
+const port = process.env.PORT || 3000;
 
 var public = path.join(__dirname, "public");
 
@@ -42,6 +43,6 @@ app.post("/download", (req, resp) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Hosted on 3000 port");
+app.listen(port, () => {
+  console.log(`Hosted on ${port} port`);
 });
