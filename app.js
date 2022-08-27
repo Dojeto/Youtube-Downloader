@@ -24,12 +24,11 @@ app.post('/',(async(req,resp)=>{
         })
     
         const title = getInformation.videoDetails.title
-        console.log(title)
         
         ytdl(url)
         .pipe(fs.createWriteStream(`views/${title}.mp4`)).on('close', async() => {
             resp.download(path.join(views,`${title}.mp4`))
-            console.log(await deletefile(title))
+            await deletefile(title)
         });
 
        
