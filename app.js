@@ -6,13 +6,15 @@ const deletefile = require("./utiles/deletefile")
 const app = express()
 const port = process.env.PORT || 3000;
 
+
 var views = path.join(__dirname, "views");
 app.set('view engine','ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/',((req,resp)=>{
-    resp.render('home')
+    const xys = false;
+    resp.render('home',{value : xys})
 }))
 
 app.post('/',(async(req,resp)=>{
@@ -34,7 +36,9 @@ app.post('/',(async(req,resp)=>{
        
     }
     catch{
-        resp.send("Invalid Url")
+        resp.send("Invalid")
+        // xys = true;
+        // console.log(xys);
     }
 }))
 

@@ -1,15 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home~</title>
-</head>
-<body>
-    <form action="/" method="post">
-        <input type="text" placeholder="Url" name="url">
-        <input type="submit" value="download">
-      </form>
-</body>
+    <style>
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
+      .container{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+      }
+      #red{
+        color: red;
+      }
+      body {
+        background-color: black;
+        color: white;
+        
+      }
+      .form-control {
+        position: relative;
+        margin: 20px 0 40px;
+        width: 190px;
+        
+      }
+
+      .form-control input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px #fff solid;
+        display: block;
+        width: 100%;
+        padding: 15px 0px;
+        font-size: 18px;
+        color: #fff;
+        align-items: center;
+        
+      }
+
+      .form-control input:focus,
+      .form-control input:valid {
+        outline: 0;
+        border-bottom-color: lightblue;
+      }
+
+      .form-control label {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .form-control label span {
+        display: inline-block;
+        font-size: 18px;
+        min-width: 5px;
+        color: #fff;
+        /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .form-control input:focus + label span,
+      .form-control input:valid + label span {
+        color: lightblue;
+        transform: translateY(-30px);
+      }
+      /* Button css*/
+      /* From uiverse.io by @joe-watson-sbf */
+.btn {
+  font-size: 17px;
+  background: rgba(255, 255, 255, 0.259);
+  border: none;
+  padding: 1em 1.5em;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffffff;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">           
+        <form action="/" method="post" autocomplete="off">
+        
+        <div class="form-control">
+            <input type="text" required="" name="url" />
+            <label>
+            <span style="transition-delay: 0ms">U</span>
+            <span style="transition-delay: 50ms">R</span>
+            <span style="transition-delay: 100ms">L</span>  
+            </label>
+        </div>
+            <button class="btn" value="download" type="submit">
+            Download
+            </button>
+        </form>
+    </div>
+  </body>
 </html>
