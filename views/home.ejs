@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home~</title>
     <style>
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
       .container{
         display: flex;
         justify-content: center;
@@ -19,6 +22,7 @@
       body {
         background-color: black;
         color: white;
+        
       }
       .form-control {
         position: relative;
@@ -37,6 +41,7 @@
         font-size: 18px;
         color: #fff;
         align-items: center;
+        
       }
 
       .form-control input:focus,
@@ -57,6 +62,7 @@
         font-size: 18px;
         min-width: 5px;
         color: #fff;
+        /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
         transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
 
@@ -118,28 +124,21 @@
     </style>
   </head>
   <body>
-    <div class="container">
-       
-        <!-- <div id="red"><%= value %></div> -->
-    <form action="/" method="post" autocomplete="off">
-      <!-- <input type="text" placeholder="Url"  /> -->
-      <div class="form-control">
-        <input type="value" required="" name="url" />
-        <label>
-          <span style="transition-delay: 0ms">U</span
-          ><span style="transition-delay: 50ms">R</span
-          ><span style="transition-delay: 100ms">L</span>
-          <!-- ><span style="transition-delay: 150ms">r</span
-          ><span style="transition-delay: 200ms">n</span
-          ><span style="transition-delay: 250ms">a</span
-          ><span style="transition-delay: 300ms">m</span
-          ><span style="transition-delay: 350ms">e</span> -->
-        </label>
-      </div>
-      <button class="btn" type="submit">
-        Download
-    </button>
-    </form>
-</div>
+    <div class="container">           
+        <form action="/" method="post" autocomplete="off">
+        
+        <div class="form-control">
+            <input type="text" required="" name="url" />
+            <label>
+            <span style="transition-delay: 0ms">U</span>
+            <span style="transition-delay: 50ms">R</span>
+            <span style="transition-delay: 100ms">L</span>  
+            </label>
+        </div>
+            <button class="btn" value="download" type="submit">
+            Download
+            </button>
+        </form>
+    </div>
   </body>
 </html>
