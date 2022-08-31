@@ -37,8 +37,6 @@ app.post('/',(async(req,resp)=>{
     }
     catch{
         resp.send("Invalid")
-        // xys = true;
-        // console.log(xys);
     }
 }))
 
