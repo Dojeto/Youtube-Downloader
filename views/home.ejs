@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home~</title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         *{
-            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            box-sizing: border-box;
+
         }
       .container{
         display: flex;
@@ -16,11 +22,8 @@
         align-items: center;
         flex-direction: column;
       }
-      #red{
-        color: red;
-      }
       body {
-        background-color: black;
+        background-color: black ;
         color: white;
         
       }
@@ -30,6 +33,7 @@
         width: 190px;
         
       }
+
       .form-control input {
         background-color: transparent;
         border: 0;
@@ -42,42 +46,44 @@
         align-items: center;
         
       }
+
       .form-control input:focus,
       .form-control input:valid {
         outline: 0;
         border-bottom-color: lightblue;
       }
+
       .form-control label {
         position: absolute;
         top: 15px;
         left: 0;
         pointer-events: none;
       }
+
       .form-control label span {
         display: inline-block;
         font-size: 18px;
         min-width: 5px;
         color: #fff;
-        /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
         transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
+
       .form-control input:focus + label span,
       .form-control input:valid + label span {
-        color: lightblue;
+        color: rgb(255, 255, 255);
         transform: translateY(-30px);
       }
-      /* Button css*/
-      /* From uiverse.io by @joe-watson-sbf */
 .btn {
   font-size: 17px;
-  background: rgba(255, 255, 255, 0.259);
+  background: rgb(255, 255, 255);
   border: none;
   padding: 1em 1.5em;
-  color: white;
+  color: rgb(1, 1, 1);
   text-transform: uppercase;
   position: relative;
   transition: .5s ease;
 }
+
 .btn::before {
   content: '';
   position: absolute;
@@ -88,13 +94,16 @@
   background-color: #ffffff;
   transition: .5s ease;
 }
+
 .btn:hover {
   color: #1e1e2b;
   transition-delay: .5s;
 }
+
 .btn:hover::before {
   width: 100%;
 }
+
 .btn::after {
   content: '';
   position: absolute;
@@ -106,29 +115,58 @@
   transition: .4s ease;
   z-index: -1;
 }
+
 .btn:hover::after {
   height: 100%;
   transition-delay: 0.4s;
   color: aliceblue;
 }
+.title{
+  width: 504px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
+}
+img
+{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.4;
+}
+.form-contro{
+  width: 10000px;
+
+}
+
     </style>
   </head>
   <body>
-    <div class="container">           
+    
+    <div class="container">    
+      <img id="background-img" src="https://user-images.githubusercontent.com/111056036/187666645-963a657b-2d9f-454d-9a9c-7cf629955509.gif" alt="">  
+      <div class="title">Download your Favorite Youtube Videos at One place</div>     
         <form action="/" method="post" autocomplete="off">
+          <div class="form-control">
+              <input type="text" required="" name="url" />
+              <label>
+              <span style="transition-delay: 0ms">U</span>
+              <span style="transition-delay: 50ms">R</span>
+              <span style="transition-delay: 100ms">L</span>   
+              <span style="transition-delay: 150ms"> </span>  
+              <span style="transition-delay: 200ms">H</span>  
+              <span style="transition-delay: 250ms">E</span>  
+              <span style="transition-delay: 300ms">R</span>  
+              <span style="transition-delay: 350ms">E</span>  
+              </label>
+          </div>
         
-        <div class="form-control">
-            <input type="text" required="" name="url" />
-            <label>
-            <span style="transition-delay: 0ms">U</span>
-            <span style="transition-delay: 50ms">R</span>
-            <span style="transition-delay: 100ms">L</span>  
-            </label>
-        </div>
             <button class="btn" value="download" type="submit">
             Download
             </button>
         </form>
     </div>
+
   </body>
 </html>
