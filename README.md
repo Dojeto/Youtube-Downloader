@@ -1,10 +1,10 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/Dojeto/Youtube-Downloader"><img src="https://user-images.githubusercontent.com/81398258/193456668-802f43bf-6aba-42e0-9c81-098eb75929cc.png"></a>
-  </p>
-<h4 align="center">Youtube Downloader</h4>
+ </p>
+<p align="center">Youtube Downloader</p>
 
-<h4 align="center">Download any youtube video with just on click , No-Ads :heart:</h4>
+<p align="center">Download any youtube video with just on click , No-Ads :heart:</p>
 
 <!-- PROJECT ABOUT -->
 ## <img src="https://user-images.githubusercontent.com/81398258/193457879-3112522a-c6e0-46f9-989b-e6767869e831.png" align ="center" width="42" height="42">About This Project
