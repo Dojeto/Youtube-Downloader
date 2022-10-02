@@ -1,6 +1,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/Dojeto/Youtube-Downloader"><img src="https://user-images.githubusercontent.com/81398258/193456668-802f43bf-6aba-42e0-9c81-098eb75929cc.png"></a>
+  </p>
 <h4 align="center">Youtube Downloader</h4>
 <h4 align="center">Download any youtube video with just on click , No-Ads :heart:</h4>
 
