@@ -22,7 +22,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/cfb691a93a064d9ea753ef2b5fccf797)](https://www.codacy.com/manual/Dojeto/Youtube-Downloader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Dojeto/Youtube-Downloader&amp;utm_campaign=Badge_Grade)
 
 <!-- GETTING STARTED -->
-## <img src="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png" width="32" height="32"> Getting Started
+## <img align="center" src="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png" width="32" height="32"> Getting Started
 
 To get a local copy up and running follow these simple steps.
 ### Prerequisites
@@ -51,3 +51,11 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some YourAmazingFeature'`)
 4. Push to the Branch (`git push origin feature/YourAmazingFeature`)
 5. Open a Pull Request
+
+<!-- CONTRIBUTERS -->
+## ⚫Contributors
+
+• [Dojeto](https://github.com/Dojeto) <br>
+• [Mspatel18](https://github.com/mspatel18)
+
+![Alt](https://repobeats.axiom.co/api/embed/4a71a93cea790c4b552f91e2d33e8aaa752a4fe6.svg "Repobeats analytics image")
