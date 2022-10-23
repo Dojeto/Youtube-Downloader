@@ -1,2 +1,6 @@
 kramdown:
   input: Kramdown
+
+``` css
+/* code */
+```
