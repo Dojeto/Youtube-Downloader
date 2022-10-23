@@ -4,6 +4,8 @@
  </p>
 <p align="center">Youtube Downloader</p>
 
+[link](url){:target="_blank"}
+
 ![Build Status]("Build Status")
 
 <p align="center">Download any youtube video with just on click , No-Ads :heart:</p>
