@@ -4,7 +4,7 @@
  </p>
 <p align="center">Youtube Downloader</p>
 
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+<a href="http://example.com/" target="_blank">Hello, world!</a>
 
 <p align="center">Download any youtube video with just on click , No-Ads :heart:</p>
 
