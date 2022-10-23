@@ -1,0 +1,158 @@
+# Site settings
+#
+# underscore Config dot yaml (_config.yml) template ver 11-11-2019
+#
+# Un-comment the theme for the `docs` folder [only] in satellite repos
+theme: "jekyll-theme-cayman"
+#
+# There is one main repository as of 11-11-19
+# repository: https://www.github.com/mminail/mminail.github.io
+#
+# There are approx seventy satellite repositories as of 11-11-19
+# repository: https://www.github.com/rwebaz/rwebaz.github.io
+#
+# There is also one new repository as of 11-11-19
+# repository: https://www.github.com/exvivospace/exvivospace.github.io
+#
+name: ""
+lang: "en-US"
+encoding: UTF-8
+title: "Markdown Lessons Project"
+tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown development languages"
+description: "The Markdown Lessons Project, or MLP is a GitHub repo of Lessons and Articles emphasizing both the GFM and Kramdown development languages."
+#
+twitter:
+    username: "mminail"
+author:
+    name: "Robert Weber, Director"
+    email: "mminail@icloud.com"
+    github_username: "rwebaz"
+    twitter_username: "rwebaz"
+#
+# Set the North American default time zone for the repo
+timezone: "America/Phoenix"
+#
+# Exclude the default `README.md` file when rendering Jekyll
+exclude: ['README.md']
+#
+# The 'baseurl' is the subpath of your designated project, e.g. /Blank-Lessons-Project or /blog or simply "/"
+baseurl: "/Markdown-Lessons-Project"
+#
+# The 'url' is the parental web address of your designated project, e.g. /https://mminail.github.io
+url: "https://rwebaz.github.io"
+#
+# The `source` tells the Jekyll engine where to locate the opening `index` file.
+# In this case, the `source` of the `index.md` is the `docs` folder of the repo.
+# Because this GitHub pages website is being served remotely from the `docs` folder,
+# a simple slash confirms the location of the `index` file.
+# source: "/"
+#
+# GitHub Pages Mandatory Defaults
+# 
+# GitHub pages default (A)
+# Do NOT produce an index for related posts
+# suggested. lsi: "false" or Boolean "0";
+# Produces an index for related posts when enabled "true" or Boolean "1";
+# Requires the `classifier-reborn` plugin
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+lsi: false
+#
+# GitHub pages default (B)
+# Disable all custom plugins
+# suggested. safe: "true"; disables all custom plugins
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+safe: true
+#
+# GitHub pages default (C)
+# Set the properties for `Gist`
+# suggested. noscript: "false"; unknown
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+# Warming. Property `gist` is not allowed
+gist:
+  noscript: "false"
+#
+# GitHub pages default (C)
+# Disable the `Experimental Incremental Build Feature` or `EIBF`
+# suggested. incremental: "false"; disables the `EIBF` Why? [may break site generation in some cases]
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+# Warning. Author not disabling this feature nor enabling this feature
+# incremental: false
+#
+# Set the default `highlighter` mechanism to `Rouge`
+highlighter: "rouge"
+#
+# Set the default `markdown` engine to `Kramdown`
+markdown: "kramdown"
+#
+# Set the properties for `Kramdown`
+kramdown:
+    input: "GFM"
+    syntax_highlighter: rouge
+    math_engine: "mathjax"
+    hard_wrap: "false"
+#
+# Set the code for `Goodle Analytics`
+# Warning. Property `google_analytics` is not allowed
+google_analytics: [UA-44765001-15]
+#
+# Settings For Default Keys: Use a scope/values pair
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "assets/img/png"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "assets/img/svg"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "assets/ico"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "" 
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Robert Weber, Director"
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "default" 
+      author: "Robert Weber, Director"
+excerpt_separator: <!-- this is a literal excerpt separator -->
+collections:
+  gists:
+    output: "true"
+  collection_CFFP:
+    output: "true"
+defaults:
+  - scope:
+      path: ""
+      type: "collection_LLP"
+    values:
+      layout: "page"
+defaults:
+  - scope:
+      path: "_gists"
+      type: "pages"
+    values:
+      category: "mminail"
+plugins_dir:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.old
