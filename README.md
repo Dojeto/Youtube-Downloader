@@ -3,11 +3,6 @@
   <a href="https://github.com/Dojeto/Youtube-Downloader"><img src="https://user-images.githubusercontent.com/81398258/193456668-802f43bf-6aba-42e0-9c81-098eb75929cc.png"></a>
  </p>
 <p align="center">Youtube Downloader</p>
-
-[link](url){:target="_blank"}
-
-![Build Status]("Build Status")
-
 <p align="center">Download any youtube video with just on click , No-Ads :heart:</p>
 
 <!-- PROJECT ABOUT -->
