@@ -8,6 +8,8 @@
 <!-- PROJECT ABOUT -->
 ## <img src="https://user-images.githubusercontent.com/81398258/193457879-3112522a-c6e0-46f9-989b-e6767869e831.png" align ="center" width="42" height="42">About This Project
 
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+
 <p align="center">YoutubeDownloader is an application that lets you download videos from YouTube <br>You can copy-paste the URL of any video, playlist, or channel and download it directly. It also supports searching by keywords, which is helpful if you want to quickly look up and download videos</p>
 
 ![NodeJS Version](https://img.shields.io/badge/NodeJS-16.9.0-green?style=for-the-badge&logo=appveyor)
