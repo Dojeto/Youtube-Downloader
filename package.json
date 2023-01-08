@@ -17,6 +17,6 @@
     "fs": "^0.0.1-security",
     "nodemon": "^2.0.19",
     "path": "^0.12.7",
-    "ytdl-core": "^4.11.1"
+    "ytdl-core": "^4.11.2"
   }
 }
